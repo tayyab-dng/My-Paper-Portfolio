@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<style>
+@font-face {
+  font-family: 'Canopee';
+  src: url('/fonts/Canopee.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Domaine Display';
+  src: url('/fonts/DomaineDispCond-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Domaine Display';
+  src: url('/fonts/DomaineDispCondMedium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+}
+
+body {
+  background-color: #1d1d1b;
+  color: #cdc6be;
+  font-family: sans-serif;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.sample {
+  font-size: 80px;
+  line-height: 1;
+  text-transform: uppercase;
+  background: #000;
+  padding: 20px;
+  display: inline-block;
+}
+
+.canopee-default { font-family: 'Canopee'; }
+.canopee-ss01 { font-family: 'Canopee'; font-feature-settings: 'ss01'; }
+.canopee-ss02 { font-family: 'Canopee'; font-feature-settings: 'ss02'; }
+.canopee-ss03 { font-family: 'Canopee'; font-feature-settings: 'ss03'; }
+.canopee-ss04 { font-family: 'Canopee'; font-feature-settings: 'ss04'; }
+.canopee-titl { font-family: 'Canopee'; font-feature-settings: 'titl'; }
+
+.domaine-regular { font-family: 'Domaine Display'; font-weight: 400; }
+.domaine-medium { font-family: 'Domaine Display'; font-weight: 500; }
+</style>
+</head>
+<body>
+  <h1>Font Comparison Test</h1>
+  <div>Canopee Default: <div class="sample canopee-default">WEBSITE</div></div>
+  <div>Canopee ss01: <div class="sample canopee-ss01">WEBSITE</div></div>
+  <div>Canopee ss02: <div class="sample canopee-ss02">WEBSITE</div></div>
+  <div>Canopee ss03: <div class="sample canopee-ss03">WEBSITE</div></div>
+  <div>Canopee ss04: <div class="sample canopee-ss04">WEBSITE</div></div>
+  <div>Canopee titl: <div class="sample canopee-titl">WEBSITE</div></div>
+  <div>Domaine Regular: <div class="sample domaine-regular">WEBSITE</div></div>
+  <div>Domaine Medium: <div class="sample domaine-medium">WEBSITE</div></div>
+</body>
+</html>

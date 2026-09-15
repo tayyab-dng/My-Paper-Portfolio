@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400&family=UnifrakturCook:wght@700&display=swap');
+
+@font-face {
+  font-family: 'Canopee';
+  src: url('/fonts/Canopee.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Domaine Display';
+  src: url('/fonts/DomaineDispCond-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Domaine Display';
+  src: url('/fonts/DomaineDispCondMedium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Editorial New';
+  src: url('/fonts/EditorialNew-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Editorial New';
+  src: url('/fonts/EditorialNew-Light.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Editorial New';
+  src: url('/fonts/EditorialNew-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-paper: #cdc6be;
+  --color-ink: #1d1d1b;
+  --color-rust: #c03f13;
+}
+
+html {
+  background-color: #cdc6be;
+  color: #1d1d1b;
+  font-family: 'Editorial New', Georgia, serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+body {
+  background-color: #cdc6be;
+  color: #1d1d1b;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: 'Editorial New', Georgia, serif;
+  -webkit-font-smoothing: antialiased;
+  background-image: url('/assets/paper-texture.jpg');
+  background-repeat: repeat;
+  background-size: 480px auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+/* Authentic Paper Texture Overlay matching niccolomiranda.com */
+.paper-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 999;
+  pointer-events: none;
+  opacity: 0.35;
+  mix-blend-mode: multiply;
+  background-image: url('/assets/paper-texture.jpg');
+  background-position: 50% 50%;
+  background-size: 480px auto;
+  background-repeat: repeat;
+}
+
+/* Background paper texture helper */
+.paper-bg {
+  background-color: #cdc6be;
+  background-image: url('/assets/paper-texture.jpg');
+  background-repeat: repeat;
+  background-size: 480px auto;
+}
+
+/* Authentic editorial dropcap */
+.has-dropcap {
+  font-family: 'Editorial New', Georgia, serif;
+  font-size: 2.1vw;
+  line-height: 2.6vw;
+  text-align: left;
+  letter-spacing: -0.015em;
+  font-weight: 300;
+}
+
+.has-dropcap::first-letter {
+  font-family: 'Canopee', sans-serif;
+  font-feature-settings: 'ss03';
+  float: left;
+  font-size: 6.8vw;
+  line-height: 5vw;
+  margin: 0.6vw 0.9vw 0.8vw 0;
+  background-color: #1d1d1b;
+  color: #cdc6be;
+  padding: 0.7vw 0.45vw 0.4vw 0.45vw;
+  font-weight: 400;
+}
+
+/* Authentic /work page dropcap matching Webflow */
+.has-dropcap-work {
+  font-family: 'Editorial New', Georgia, serif;
+  font-size: 4vh;
+  line-height: 5.1vh;
+  text-transform: none !important;
+  color: #1d1d1b;
+  font-weight: 300;
+  letter-spacing: -0.01em;
+}
+
+.has-dropcap-work::first-letter {
+  font-family: 'Canopee', sans-serif;
+  font-feature-settings: 'ss03';
+  float: left;
+  font-size: 15vh;
+  line-height: 10.5vh;
+  margin: 0.5vh 1.5vh 1vh 0;
+  background-color: #1d1d1b;
+  color: #cdc6be;
+  padding: 2vh 0.6vh 1vh 0.6vh;
+  font-weight: 400;
+}
+
+@media (max-width: 768px) {
+  .has-dropcap {
+    font-size: 1.15rem;
+    line-height: 1.55rem;
+  }
+  .has-dropcap::first-letter {
+    font-size: 3.5rem;
+    line-height: 2.8rem;
+    padding: 0.35rem 0.3rem 0.2rem;
+    margin-right: 0.5rem;
+  }
+}
+
+/* Ruled horizontal baseline guide lines */
+.ruled-line {
+  width: 100%;
+  height: 1px;
+  background-color: #1d1d1b;
+  opacity: 0.22;
+  pointer-events: none;
+}
+
+/* Underline style matching Miranda */
+.under {
+  text-decoration: underline;
+  text-underline-offset: 0.3vw;
+  text-decoration-thickness: 1px;
+  text-decoration-color: rgba(29, 29, 27, 0.6);
+}
