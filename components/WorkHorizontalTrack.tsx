@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useRef, useState, useEffect } from 'react';
+import Link from 'next/link';
 
 interface Project {
   id: string;
@@ -326,8 +327,10 @@ export default function WorkHorizontalTrack() {
               </div>
 
               {/* Expandable Case Study Accordion (.book-wrap) */}
-              <div
-                className={`h-full flex flex-col justify-start items-center pt-[6vh] border-r border-[#1d1d1b]/30 bg-[#cdc6be] overflow-hidden transition-[width] duration-500 ease-[cubic-bezier(0.645,0.045,0.355,1)] ${
+              <Link
+                href={`/work/${p.id}`}
+                aria-label={`View ${p.name} case study`}
+                className={`h-full flex flex-col justify-start items-center pt-[6vh] border-r border-[#1d1d1b]/30 bg-[#cdc6be] overflow-hidden transition-[width] duration-500 ease-[cubic-bezier(0.645,0.045,0.355,1)] cursor-pointer hover:bg-[#d8cfc5]/40 group ${
                   isOpen ? 'w-[75vh]' : 'w-0'
                 }`}
                 style={{ transformOrigin: '0%' }}
@@ -345,7 +348,7 @@ export default function WorkHorizontalTrack() {
                 </div>
 
                 {/* book-title-w */}
-                <div className="w-[40vh] flex justify-center items-center mt-[3vh] shrink-0">
+                <div className="w-[40vh] flex justify-center items-center mt-[3vh] shrink-0 group-hover:scale-[1.02] transition-transform duration-300">
                   <img
                     src={p.svgTitle}
                     alt={p.name}
@@ -365,10 +368,10 @@ export default function WorkHorizontalTrack() {
                   <img
                     src={p.img}
                     alt={p.name}
-                    className="w-[110vh] max-w-none h-full object-cover"
+                    className="w-[110vh] max-w-none h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
                   />
                 </div>
-              </div>
+              </Link>
             </div>
           );
         })}

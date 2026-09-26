@@ -100,6 +100,7 @@ export default function TestimonialStackedCards() {
       <div className="w-full flex flex-col lg:flex-row items-stretch lg:items-start justify-start relative">
         {testimonials.map((card) => {
           const isActive = activeCard === card.id;
+          const isMobileVisible = card.id === 's-1' || card.id === 's-3';
 
           return (
             <div
@@ -108,7 +109,9 @@ export default function TestimonialStackedCards() {
               style={{
                 zIndex: isActive ? 60 : card.defaultZIndex,
               }}
-              className={`w-full lg:w-[40vw] h-auto min-h-[60vw] lg:min-h-0 lg:h-[25vw] bg-[#cdc6be] border-[2.5px] border-[#1d1d1b] rounded-[2vw] lg:rounded-[0.8vw] flex flex-col justify-between p-6 sm:p-8 lg:p-[2.5vw_3vw_3vw] relative shrink-0 mb-6 lg:mb-0 shadow-[-4px_4px_6px_rgba(29,29,27,0.2)] cursor-pointer transition-all duration-300 ease-out ${card.transformDesktop} ${
+              className={`${
+                isMobileVisible ? 'flex' : 'hidden lg:flex'
+              } w-full lg:w-[40vw] h-auto min-h-[55vw] lg:min-h-0 lg:h-[25vw] bg-[#cdc6be] border-[2.5px] border-[#1d1d1b] rounded-[3vw] lg:rounded-[0.8vw] flex-col justify-between p-5 sm:p-8 lg:p-[2.5vw_3vw_3vw] relative shrink-0 mb-5 lg:mb-0 shadow-[-4px_4px_6px_rgba(29,29,27,0.2)] cursor-pointer transition-all duration-300 ease-out ${card.transformDesktop} ${
                 isActive ? 'lg:-translate-y-3 shadow-[-6px_10px_16px_rgba(29,29,27,0.3)]' : 'hover:lg:-translate-y-1'
               }`}
             >

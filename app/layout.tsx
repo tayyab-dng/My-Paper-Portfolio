@@ -3,8 +3,8 @@ import './globals.css';
 import CustomScrollbar from '@/components/CustomScrollbar';
 
 export const metadata: Metadata = {
-  title: 'Miranda — Paper Portfolio',
-  description: "Niccolò Miranda is an award-winning designer & developer passionate about creating iconic digital experiences through motion, typography and creative coding.",
+  title: 'Tayyab Safdar Portfolio',
+  description: "Tayyab Safdar — AI Orchestrator & Developer passionate about creating iconic digital experiences through motion, typography and creative coding.",
 };
 
 export default function RootLayout({

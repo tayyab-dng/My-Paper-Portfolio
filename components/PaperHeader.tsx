@@ -3,38 +3,47 @@
 import React, { useState } from 'react';
 import FullscreenMenuModal from '@/components/FullscreenMenuModal';
 
-export default function PaperHeader() {
+interface PaperHeaderProps {
+  activeItem?: 'INDEX' | 'WORK' | 'ABOUT';
+}
+
+export default function PaperHeader({ activeItem = 'INDEX' }: PaperHeaderProps) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
     <>
-      <header className="sticky top-0 z-50 w-full bg-[#cdc6be] border-b border-[#1d1d1b]/30 h-[10.8vh] min-h-[76px] sm:min-h-[86px] md:min-h-[96px] px-6 sm:px-8 lg:px-[2.5vw] flex items-center justify-between select-none">
-        {/* Location */}
-        <div className="w-1/3 flex items-center justify-start">
+      <header className="relative md:sticky md:top-0 z-50 w-full bg-paper border-b border-[#1d1d1b]/20 h-[64px] sm:h-[68px] md:h-[10.8vh] md:min-h-[96px] px-4 sm:px-8 lg:px-[2.5vw] flex items-center justify-between select-none">
+        {/* Left: Location / Title (Hidden on mobile < md) */}
+        <div className="hidden md:flex w-1/3 items-center justify-start">
           <span className="font-editorial text-[1.8vh] sm:text-[15px] md:text-[16px] text-[#1d1d1b] font-normal tracking-normal">
-            Amsterdam, NL.
+            AI Orchestrator
           </span>
         </div>
 
-        {/* The Authentic Header SVG ("The Paper Portfolio" in gothic calligraphy) */}
-        <div className="w-1/3 flex items-center justify-center">
-          <img
-            src="/assets/header.svg"
-            alt="The Paper Portfolio"
-            className="h-7 sm:h-8 md:h-9 max-h-[3.6vh] w-auto object-contain select-none pointer-events-none"
-          />
+        {/* Dummy spacer on mobile for exact symmetrical centering */}
+        <div className="w-[28px] md:hidden shrink-0" aria-hidden="true" />
+
+        {/* The Authentic Header SVG - Prominent & Bold */}
+        <div className="flex-1 md:w-1/3 flex items-center justify-center">
+          <a href="/" className="cursor-pointer inline-flex items-center justify-center">
+            <img
+              src="/assets/header.svg"
+              alt="The Paper Portfolio"
+              className="h-[23px] sm:h-[26px] md:h-9 md:max-h-[3.6vh] w-auto max-w-[70vw] object-contain select-none pointer-events-none"
+            />
+          </a>
         </div>
 
         {/* 2-line Hamburger Menu Trigger */}
-        <div className="w-1/3 flex items-center justify-end">
+        <div className="w-[28px] md:w-1/3 flex items-center justify-end shrink-0">
           <button
             type="button"
             onClick={() => setIsMenuOpen(true)}
             aria-label="Open Menu"
-            className="group flex flex-col justify-center items-end gap-[6px] p-2 focus:outline-none cursor-pointer"
+            className="group flex flex-col justify-center items-end gap-[4px] md:gap-[6px] p-0 md:p-2 focus:outline-none cursor-pointer"
           >
-            <span className="w-7 sm:w-8 h-[2px] bg-[#1d1d1b] transition-transform duration-200 group-hover:-translate-x-0.5" />
-            <span className="w-7 sm:w-8 h-[2px] bg-[#1d1d1b] transition-transform duration-200 group-hover:translate-x-0.5" />
+            <span className="w-[28px] sm:w-8 h-[1.5px] md:h-[2px] bg-[#1d1d1b] transition-transform duration-200 group-hover:-translate-x-0.5" />
+            <span className="w-[28px] sm:w-8 h-[1.5px] md:h-[2px] bg-[#1d1d1b] transition-transform duration-200 group-hover:translate-x-0.5" />
           </button>
         </div>
       </header>
@@ -43,6 +52,7 @@ export default function PaperHeader() {
       <FullscreenMenuModal
         isOpen={isMenuOpen}
         onClose={() => setIsMenuOpen(false)}
+        activeItem={activeItem}
       />
     </>
   );

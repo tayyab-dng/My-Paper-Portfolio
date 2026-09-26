@@ -1,19 +1,23 @@
 import React from 'react';
+import Link from 'next/link';
 
 export default function ProjectGalleryTrack() {
   return (
-    <section className="w-full border-b border-[#1d1d1b]/30 bg-transparent relative">
+    <section className="hidden md:block w-full border-b border-[#1d1d1b]/30 bg-transparent relative">
       <div className="grid grid-cols-1 md:grid-cols-12 min-h-[420px]">
         {/* ============================================================ */}
         {/* Left Card: AvroKO                                            */}
         {/* ============================================================ */}
-        <div className="relative md:col-span-4 p-6 sm:p-8 lg:p-10 flex flex-col justify-between border-b md:border-b-0">
+        <Link
+          href="/work/avroko"
+          className="relative md:col-span-4 p-6 sm:p-8 lg:p-10 flex flex-col justify-between border-b md:border-b-0 cursor-pointer group"
+        >
           {/* Authentic AvroKO Artwork Image (28:11 Widescreen) */}
           <div className="w-full aspect-[28/11] overflow-hidden border border-[#1d1d1b] mb-4 bg-[#120e0b]">
             <img
               src="/assets/avro-ko.jpeg"
               alt="AvroKO"
-              className="w-full h-full object-cover select-none pointer-events-none"
+              className="w-full h-full object-cover select-none pointer-events-none group-hover:scale-105 transition-transform duration-500 ease-out"
             />
           </div>
 
@@ -36,15 +40,15 @@ export default function ProjectGalleryTrack() {
             </p>
           </div>
 
-          {/* Small partial divider line (not full height, has space top and bottom) */}
+          {/* Small partial divider line */}
           <div className="hidden md:block absolute right-0 top-12 bottom-12 w-[1px] bg-[#1d1d1b]/30 pointer-events-none" />
-        </div>
+        </Link>
 
         {/* ============================================================ */}
         {/* Center Column: ALL WORK! Hero Index                          */}
         {/* ============================================================ */}
         <div className="relative md:col-span-4 p-6 sm:p-8 lg:p-10 flex flex-col justify-between items-center text-center border-b md:border-b-0">
-          <div className="my-auto flex flex-col items-center group cursor-pointer">
+          <Link href="/work" className="my-auto flex flex-col items-center group cursor-pointer">
             {/* Headline in pure authentic Domaine Display */}
             <div className="relative inline-block mb-3">
               <h2 className="font-display text-[3.6rem] sm:text-[4.4rem] lg:text-[5.2rem] text-[#1d1d1b] uppercase tracking-[-0.02em] leading-[0.88] font-normal transition-transform duration-300 group-hover:scale-[1.01]">
@@ -74,7 +78,7 @@ export default function ProjectGalleryTrack() {
               <p>the latest work —</p>
               <p>of the last years.</p>
             </div>
-          </div>
+          </Link>
 
           {/* Caption with Sentence-Case Typography */}
           <div className="flex items-baseline justify-center gap-1.5 text-[#1d1d1b]">
@@ -82,20 +86,23 @@ export default function ProjectGalleryTrack() {
             <span className="font-editorial font-light text-xs sm:text-sm tracking-[-0.01em]">Drag sideways to navigate</span>
           </div>
 
-          {/* Small partial divider line (not full height, has space top and bottom) */}
+          {/* Small partial divider line */}
           <div className="hidden md:block absolute right-0 top-12 bottom-12 w-[1px] bg-[#1d1d1b]/30 pointer-events-none" />
         </div>
 
         {/* ============================================================ */}
         {/* Right Card: WOW CONCEPT                                      */}
         {/* ============================================================ */}
-        <div className="relative md:col-span-4 p-6 sm:p-8 lg:p-10 flex flex-col justify-between">
+        <Link
+          href="/work/wow-concept"
+          className="relative md:col-span-4 p-6 sm:p-8 lg:p-10 flex flex-col justify-between cursor-pointer group"
+        >
           {/* Authentic WOW Concept Image (28:11 Widescreen) */}
           <div className="w-full aspect-[28/11] overflow-hidden border border-[#1d1d1b] mb-4 bg-[#578fc9]">
             <img
               src="/assets/wow-concept.webp"
               alt="WOW Concept"
-              className="w-full h-full object-cover select-none pointer-events-none"
+              className="w-full h-full object-cover select-none pointer-events-none group-hover:scale-105 transition-transform duration-500 ease-out"
             />
           </div>
 
@@ -117,7 +124,7 @@ export default function ProjectGalleryTrack() {
               WOW Concept is a the world’s first concept store based in Madrid revolutionizing retail with a dynamic &amp; interactive shopping experience.
             </p>
           </div>
-        </div>
+        </Link>
       </div>
     </section>
   );

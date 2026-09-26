@@ -1,31 +1,21 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
-import AboutHeaderNav from '@/components/AboutHeaderNav';
+import React, { useEffect } from 'react';
+import PaperHeader from '@/components/PaperHeader';
 import AboutHeroSection from '@/components/AboutHeroSection';
-import FullscreenMenuModal from '@/components/FullscreenMenuModal';
 
 export default function AboutPage() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-
   useEffect(() => {
-    document.title = 'Miranda — About';
+    document.title = 'Tayyab Safdar Portfolio — About';
   }, []);
 
   return (
     <main className="min-h-screen w-full bg-[#cdc6be] text-[#1d1d1b] relative overflow-x-hidden">
-      {/* Top Navbar */}
-      <AboutHeaderNav onOpenMenu={() => setIsMenuOpen(true)} />
+      {/* Fixed/Sticky Paper Header - identical to the Home page */}
+      <PaperHeader activeItem="ABOUT" />
 
       {/* Hero Section */}
       <AboutHeroSection />
-
-      {/* Fullscreen Navigation Menu Modal with Red Marker on ABOUT */}
-      <FullscreenMenuModal
-        isOpen={isMenuOpen}
-        onClose={() => setIsMenuOpen(false)}
-        activeItem="ABOUT"
-      />
     </main>
   );
 }

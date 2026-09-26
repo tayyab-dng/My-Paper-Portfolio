@@ -31,7 +31,7 @@ const awardsData: AwardItem[] = [
 
 export default function AwardsRow() {
   return (
-    <section className="w-full border-t border-b border-[#1d1d1b] bg-paper select-none px-[2vw] py-[3.5vw]">
+    <section className="hidden md:block w-full border-t border-b border-[#1d1d1b] bg-paper select-none px-[2vw] py-[3.5vw]">
       <div className="w-full flex flex-col sm:flex-row flex-wrap lg:flex-nowrap justify-between items-center gap-8 lg:gap-0">
         {awardsData.map((award) => (
           <div

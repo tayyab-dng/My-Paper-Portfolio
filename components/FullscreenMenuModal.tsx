@@ -84,11 +84,11 @@ export default function FullscreenMenuModal({
         {/* Left: Clean and empty matching reference */}
         <div className="w-1/3" />
 
-        {/* Center: The Paper Portfolio in gothic typography */}
+        {/* Center: Tayyab Safdar Portfolio in gothic typography */}
         <div className="w-1/3 flex items-center justify-center">
           <img
             src="/assets/header.svg"
-            alt="The Paper Portfolio"
+            alt="Tayyab Safdar Portfolio"
             className="h-7 sm:h-8 md:h-9 max-h-[3.6vh] w-auto object-contain select-none pointer-events-none filter invert brightness-[0.88]"
           />
         </div>

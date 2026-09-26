@@ -4,19 +4,19 @@ import React from 'react';
 
 export default function PaperFooter() {
   return (
-    <footer className="w-full bg-paper select-none px-[2vw] py-[2.5vw] flex flex-col sm:flex-row items-center justify-between gap-4">
+    <footer className="w-full bg-paper select-none px-3 sm:px-[2vw] py-4 sm:py-[2.5vw] flex flex-row items-center justify-between gap-2 border-t border-[#1d1d1b]/35">
       {/* Left: Brand, Mini Stamp, and Legal */}
       <div className="flex items-center">
-        {/* MIRANDA© in Canopee */}
-        <span className="font-condensed text-xl sm:text-2xl lg:text-[1.8vw] text-[#1d1d1b] uppercase tracking-[-0.03em] font-normal leading-none">
-          Miranda©
+        {/* TAYYAB© in Canopee (desktop/tablet) */}
+        <span className="hidden sm:inline font-condensed text-xl sm:text-2xl lg:text-[1.8vw] text-[#1d1d1b] uppercase tracking-[-0.03em] font-normal leading-none mr-2">
+          Tayyab©
         </span>
 
         {/* Vintage Postal Mini Stamp */}
-        <div className="w-6 sm:w-7 lg:w-[1.8vw] ml-3 sm:ml-4 lg:ml-[1vw] overflow-hidden shrink-0">
+        <div className="w-5 sm:w-7 lg:w-[1.8vw] overflow-hidden shrink-0">
           <img
             src="/assets/mini-stamp.png"
-            alt="Miranda Postal Stamp"
+            alt="Tayyab Postal Stamp"
             className="w-full h-auto object-contain select-none"
           />
         </div>
@@ -24,14 +24,14 @@ export default function PaperFooter() {
         {/* Legal Link */}
         <a
           href="/legal"
-          className="ml-3 sm:ml-4 lg:ml-[1vw] font-editorial text-sm sm:text-base lg:text-[1.35vw] text-[#1d1d1b] font-light hover:underline underline-offset-[0.2vw]"
+          className="ml-2 sm:ml-4 lg:ml-[1vw] font-editorial text-xs sm:text-base lg:text-[1.35vw] text-[#1d1d1b] font-light hover:underline underline-offset-[0.2vw]"
         >
           Legal
         </a>
       </div>
 
       {/* Right: Social Platform Links in Canopee */}
-      <div className="flex items-center font-condensed text-lg sm:text-xl lg:text-[1.6vw] text-[#1d1d1b] uppercase tracking-[-0.02em] font-normal">
+      <div className="flex items-center font-condensed text-[3.2vw] sm:text-xl lg:text-[1.6vw] text-[#1d1d1b] uppercase tracking-[-0.02em] font-normal whitespace-nowrap">
         <a
           href="https://twitter.com/niccolomiranda"
           target="_blank"
@@ -40,7 +40,7 @@ export default function PaperFooter() {
         >
           Twitter
         </a>
-        <span className="mx-2 lg:mx-[0.6vw] text-base lg:text-[1.5vw] text-[#1d1d1b]/60 leading-none">
+        <span className="mx-1.5 sm:mx-2 lg:mx-[0.6vw] text-[2.8vw] sm:text-base lg:text-[1.5vw] text-[#1d1d1b]/60 leading-none">
           •
         </span>
         <a
@@ -51,7 +51,7 @@ export default function PaperFooter() {
         >
           Insta<span className="font-display font-medium">g</span>ram
         </a>
-        <span className="mx-2 lg:mx-[0.6vw] text-base lg:text-[1.5vw] text-[#1d1d1b]/60 leading-none">
+        <span className="mx-1.5 sm:mx-2 lg:mx-[0.6vw] text-[2.8vw] sm:text-base lg:text-[1.5vw] text-[#1d1d1b]/60 leading-none">
           •
         </span>
         <a
@@ -62,7 +62,7 @@ export default function PaperFooter() {
         >
           Dribbble
         </a>
-        <span className="mx-2 lg:mx-[0.6vw] text-base lg:text-[1.5vw] text-[#1d1d1b]/60 leading-none">
+        <span className="mx-1.5 sm:mx-2 lg:mx-[0.6vw] text-[2.8vw] sm:text-base lg:text-[1.5vw] text-[#1d1d1b]/60 leading-none">
           •
         </span>
         <a

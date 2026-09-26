@@ -9,12 +9,12 @@ interface WorkSidebarNavProps {
 export default function WorkSidebarNav({ onOpenMenu }: WorkSidebarNavProps) {
   return (
     <aside
-      className="fixed left-0 top-0 bottom-0 w-[14vh] h-full z-40 bg-[#cdc6be] border-r border-[#1d1d1b]/40 flex flex-col-reverse justify-between items-center py-[6vh] select-none"
+      className="hidden md:flex fixed left-0 top-0 bottom-0 w-[14vh] h-full z-40 bg-[#cdc6be] border-r border-[#1d1d1b]/40 flex-col-reverse justify-between items-center py-[6vh] select-none"
       style={{
         boxSizing: 'border-box',
       }}
     >
-      {/* Bottom: Location ("Amsterdam, NL.") - rotated 270deg reading bottom-to-top */}
+      {/* Bottom: Location / Title ("AI Orchestrator") - rotated 270deg reading bottom-to-top */}
       <div className="flex items-center justify-center">
         <span
           className="font-editorial text-[1.8vh] leading-[2vh] text-[#1d1d1b] font-normal tracking-normal whitespace-nowrap select-none opacity-85"
@@ -22,11 +22,11 @@ export default function WorkSidebarNav({ onOpenMenu }: WorkSidebarNavProps) {
             transform: 'rotate(270deg)',
           }}
         >
-          Amsterdam, NL.
+          AI Orchestrator
         </span>
       </div>
 
-      {/* Center: Rotated SVG Header Logo ("The Paper Portfolio") */}
+      {/* Center: Rotated SVG Header Logo ("Tayyab Safdar Portfolio") */}
       <div className="flex items-center justify-center my-auto">
         <a
           href="/"
@@ -37,9 +37,8 @@ export default function WorkSidebarNav({ onOpenMenu }: WorkSidebarNavProps) {
         >
           <img
             src="/assets/header.svg"
-            alt="The Paper Portfolio"
-            draggable={false}
-            className="w-auto h-[2.5vh] max-w-none select-none pointer-events-none"
+            alt="Tayyab Safdar Portfolio"
+            className="w-[18vh] h-auto object-contain select-none pointer-events-none"
           />
         </a>
       </div>

@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function WebsiteStampBanner() {
   return (
-    <section className="relative w-full border-b border-[#1d1d1b]/35 px-[2vw] py-[2.5vw] select-none bg-paper">
+    <section className="hidden md:block relative w-full border-b border-[#1d1d1b]/35 px-[2vw] py-[2.5vw] select-none bg-paper">
       <div className="w-full flex flex-col lg:flex-row items-center lg:items-stretch justify-between gap-[2vw]">
         {/* Massive framed "WEBSITE" black block (authentic 1:1 proportion to Image 1) */}
         <div className="w-full lg:w-[75vw] bg-[#1d1d1b] pt-[2.8vw] pb-[1.8vw] px-[1.8vw] flex items-center shrink-0">
