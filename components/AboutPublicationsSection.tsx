@@ -51,10 +51,10 @@ export default function AboutPublicationsSection() {
                     </div>
                   </div>
 
-                  {/* Circular Article Trigger that slides up on desktop hover */}
+                  {/* Circular Article Trigger that slides up on desktop hover with matching SVG icon */}
                   <div className="pub-trigger absolute w-[4.3vw] h-[4.3vw] rounded-full border border-[#1d1d1b] bg-[#beb5ab] hidden md:flex items-center justify-center -bottom-[5vw] left-[0.6vw] transition-all duration-300 md:group-hover:bottom-[0.8vw]">
                     <img
-                      src="/assets/article.svg"
+                      src={pub.ico}
                       alt=""
                       draggable={false}
                       className="w-[2vw] h-[2vw] object-contain select-none"
@@ -69,7 +69,7 @@ export default function AboutPublicationsSection() {
                       {pub.source} – {pub.year}
                     </div>
                     <img
-                      src="/assets/article.svg"
+                      src={pub.ico}
                       alt=""
                       draggable={false}
                       className="pub-ico h-[4.5vw] md:h-[1.8vw] ml-[2vw] md:ml-[0.8vw] opacity-80"
