@@ -5,14 +5,15 @@ import FullscreenMenuModal from '@/components/FullscreenMenuModal';
 
 interface PaperHeaderProps {
   activeItem?: 'INDEX' | 'WORK' | 'ABOUT';
+  isFixed?: boolean;
 }
 
-export default function PaperHeader({ activeItem = 'INDEX' }: PaperHeaderProps) {
+export default function PaperHeader({ activeItem = 'INDEX', isFixed = false }: PaperHeaderProps) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
     <>
-      <header className="relative md:sticky md:top-0 z-50 w-full bg-paper border-b border-[#1d1d1b]/20 h-[64px] sm:h-[68px] md:h-[10.8vh] md:min-h-[96px] px-4 sm:px-8 lg:px-[2.5vw] flex items-center justify-between select-none">
+      <header className={`${isFixed ? 'fixed top-0 left-0' : 'relative md:sticky md:top-0'} z-50 w-full bg-paper border-b border-[#1d1d1b]/20 h-[64px] sm:h-[68px] md:h-[10.8vh] md:min-h-[96px] px-4 sm:px-8 lg:px-[2.5vw] flex items-center justify-between select-none`}>
         {/* Left: Location / Title (Hidden on mobile < md) */}
         <div className="hidden md:flex w-1/3 items-center justify-start">
           <span className="font-editorial text-[1.8vh] sm:text-[15px] md:text-[16px] text-[#1d1d1b] font-normal tracking-normal">
