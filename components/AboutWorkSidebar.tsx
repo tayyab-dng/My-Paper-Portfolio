@@ -15,7 +15,7 @@ export default function AboutWorkSidebar() {
               draggable={false}
               className="item-link block w-full group text-inherit no-underline"
             >
-              <div className="item-img-w w-full border border-[#1d1d1b] overflow-hidden aspect-[16/10] md:h-[11vw] bg-[#806454]">
+              <div className="item-img-w w-full border border-[#1d1d1b] overflow-hidden aspect-[2.5/1] md:aspect-auto md:h-[11vw] bg-[#806454]">
                 <img
                   src="/assets/projects/om-swami.jpeg"
                   alt="Om Swami"
@@ -41,7 +41,7 @@ export default function AboutWorkSidebar() {
         </div>
 
         {/* Center: ALL WORK! Headline - Order 1 on mobile, Order 2 on desktop */}
-        <div className="headline m w-full md:w-[29vw] flex flex-col items-start md:items-center justify-center text-left md:text-center relative py-[2vw] order-1 md:order-2">
+        <div className="headline m w-full md:w-[29vw] flex flex-col items-start md:items-center justify-center text-left md:text-center relative py-[4vw] md:py-[2vw] md:border-x md:border-[#1d1d1b]/40 md:px-[2.5vw] order-1 md:order-2">
           <Link
             href="/work"
             draggable={false}
@@ -52,14 +52,20 @@ export default function AboutWorkSidebar() {
               style={{ letterSpacing: '-0.04em' }}
             >
               All <span className="tracking-[-0.02em]">W</span>
-              <span className="font-editorial italic">o</span>rk!
+              <span style={{ fontFamily: '"Domaine Display", serif', fontWeight: 500, fontStyle: 'normal' }}>o</span>rk!
             </div>
-            {/* Animated SVG Doodle on Desktop */}
+            {/* Animated SVG Doodle on Desktop with authentic stroke-draw effect */}
             <div className="hidden md:block absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[115%] h-[140%] pointer-events-none">
               <svg viewBox="0 0 500 146" className="w-full h-full">
                 <ellipse
-                  className="fill-none stroke-[#1d1d1b] group-hover:stroke-[#96B59F] transition-colors"
-                  strokeWidth="2"
+                  className="fill-none stroke-[#96B59F] transition-all duration-700 ease-out"
+                  strokeWidth="2.5"
+                  strokeMiterlimit="10"
+                  strokeDasharray="1100"
+                  strokeDashoffset="1100"
+                  style={{
+                    transition: 'stroke-dashoffset 600ms cubic-bezier(0.785, 0.135, 0.15, 0.86)',
+                  }}
                   cx="250"
                   cy="72.9"
                   rx="242.4"
@@ -83,8 +89,8 @@ export default function AboutWorkSidebar() {
           </div>
         </div>
 
-        {/* Right Card: WOW Concept - Hidden on mobile per live reference */}
-        <div className="s-grid ri hidden md:flex w-full md:w-[29vw] justify-center">
+        {/* Right Card: WOW Concept - Hidden on mobile per live reference, Order 3 on desktop */}
+        <div className="s-grid ri hidden md:flex w-full md:w-[29vw] justify-center md:order-3">
           <div className="item l w-full">
             <Link
               href="/work/wow-concept"

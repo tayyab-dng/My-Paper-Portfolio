@@ -6,9 +6,10 @@ import FullscreenMenuModal from '@/components/FullscreenMenuModal';
 interface PaperHeaderProps {
   activeItem?: 'INDEX' | 'WORK' | 'ABOUT';
   isFixed?: boolean;
+  leftTitle?: string;
 }
 
-export default function PaperHeader({ activeItem = 'INDEX', isFixed = false }: PaperHeaderProps) {
+export default function PaperHeader({ activeItem = 'INDEX', isFixed = false, leftTitle = 'AI Orchestrator' }: PaperHeaderProps) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
@@ -17,7 +18,7 @@ export default function PaperHeader({ activeItem = 'INDEX', isFixed = false }: P
         {/* Left: Location / Title (Hidden on mobile < md) */}
         <div className="hidden md:flex w-1/3 items-center justify-start">
           <span className="font-editorial text-[1.8vh] sm:text-[15px] md:text-[16px] text-[#1d1d1b] font-normal tracking-normal">
-            AI Orchestrator
+            {leftTitle}
           </span>
         </div>
 

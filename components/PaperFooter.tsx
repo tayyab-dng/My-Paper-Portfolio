@@ -12,8 +12,8 @@ export default function PaperFooter() {
           Tayyab©
         </span>
 
-        {/* Vintage Postal Mini Stamp */}
-        <div className="w-5 sm:w-7 lg:w-[1.8vw] overflow-hidden shrink-0">
+        {/* Vintage Postal Mini Stamp - hidden on mobile < sm matching reference */}
+        <div className="hidden sm:block w-5 sm:w-7 lg:w-[1.8vw] overflow-hidden shrink-0">
           <img
             src="/assets/mini-stamp.png"
             alt="Tayyab Postal Stamp"

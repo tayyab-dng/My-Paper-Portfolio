@@ -18,8 +18,8 @@ export default function AboutPage() {
 
   return (
     <main className="min-h-screen w-full bg-[#cdc6be] text-[#1d1d1b] relative overflow-x-hidden selection:bg-[#1d1d1b] selection:text-[#cdc6be]">
-      {/* Fixed Paper Header with Active ABOUT indicator */}
-      <PaperHeader activeItem="ABOUT" isFixed={true} />
+      {/* Fixed Paper Header with Active ABOUT indicator and Amsterdam, NL */}
+      <PaperHeader activeItem="ABOUT" isFixed={true} leftTitle="Amsterdam, NL" />
 
       {/* Section 1: Hero with ABOUT ME Black Box & Amsterdam Statement */}
       <AboutHeroSection />

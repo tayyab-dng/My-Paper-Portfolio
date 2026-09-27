@@ -29,6 +29,7 @@ module.exports = {
         },
       },
       fontFamily: {
+        canopee: ['Canopee', 'sans-serif'],
         display: ['"Domaine Display"', '"Playfair Display"', 'Georgia', 'serif'],
         editorial: ['"Editorial New"', '"Newsreader"', 'Georgia', 'serif'],
         condensed: ['Canopee', '"Domaine Display"', 'Impact', 'sans-serif'],

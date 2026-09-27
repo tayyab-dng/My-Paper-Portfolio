@@ -37,9 +37,8 @@ export default function AboutHeroSection() {
 
           {/* Editorial Headline Statement */}
           <h2
-            className="aw1-head text-[10.5vw] md:text-[7.3vw] leading-[10.8vw] md:leading-[7.5vw] font-light text-[#1d1d1b] m-0 select-none pt-[1vw] md:pt-[2.5vw] pr-[1.2vw]"
+            className="aw1-head text-[10.5vw] md:text-[7.3vw] leading-[10.8vw] md:leading-[7.5vw] font-light text-[#1d1d1b] m-0 select-none pt-[1vw] md:pt-[2.5vw] pr-[1.2vw] indent-[16vw] md:indent-[13vw]"
             style={{
-              textIndent: '18vw',
               textTransform: 'none',
               fontFamily: '"Editorial New", serif',
               letterSpacing: '-0.04em',
