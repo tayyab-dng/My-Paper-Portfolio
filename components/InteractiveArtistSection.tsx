@@ -56,7 +56,7 @@ export default function InteractiveArtistSection() {
           <div className="w-full h-[60vw] md:h-[40vw] border border-[#1d1d1b] overflow-hidden flex items-center justify-center bg-[#a68c7c] relative">
             <img
               src="/assets/avatar-1.jpeg"
-              alt="Niccolò Miranda Portrait"
+              alt="Tayyab Safdar Portrait"
               className="w-full h-full object-cover object-[center_37%] select-none pointer-events-none"
             />
           </div>
