@@ -2,6 +2,8 @@ import React from 'react';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { PROJECTS_MAP, ProjectData } from '@/lib/projectsData';
+import LiveMarqueeHeadline from '@/components/LiveMarqueeHeadline';
+import PaperFooter from '@/components/PaperFooter';
 
 interface PageProps {
   params: Promise<{
@@ -1579,82 +1581,9 @@ export default async function ProjectDetailPage({ params }: PageProps) {
           </div>
         </div>
 
-        {/* 4. AUTHENTIC FOOTER: MARQUEE + BOTTOM BAR */}
-        <footer className="footer">
-          <div className="marquee">
-            <div className="marquee--inner">
-              {[1, 2, 3, 4, 5, 6].map((i) => (
-                <div key={i} className="marquee-content">
-                  <h4 className="f-news">Let&apos;s create something together</h4>
-                  <a
-                    href="mailto:info@niccolomiranda.com?subject=Project%20Request"
-                    className="marquee-link"
-                  >
-                    <div className="marquee-text">Email Me</div>
-                  </a>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          <div className="f-info">
-            <div className="f-col left">
-              <div className="f-title">Miranda©</div>
-              <div className="f-year">{new Date().getFullYear()}</div>
-              <img
-                src="/assets/stamp.png"
-                alt="Stamp"
-                draggable={false}
-                className="f-stamp"
-              />
-              <div className="legal-w">
-                <Link href="/legal" className="f-link">
-                  Legal
-                </Link>
-              </div>
-            </div>
-
-            <div className="f-col">
-              <div className="f-block">
-                <a
-                  href="https://twitter.com/niccolomiranda"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="f-li"
-                >
-                  twitter
-                </a>
-                <div className="f-li ci">·</div>
-                <a
-                  href="https://instagram.com/niccolomiranda"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="f-li"
-                >
-                  instagram
-                </a>
-                <div className="f-li ci">·</div>
-                <a
-                  href="https://dribbble.com/niccolomiranda"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="f-li"
-                >
-                  dribbble
-                </a>
-                <div className="f-li ci">·</div>
-                <a
-                  href="https://www.behance.net/niccolomiranda"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="f-li"
-                >
-                  behance
-                </a>
-              </div>
-            </div>
-          </div>
-        </footer>
+        {/* 4. UNIFIED FOOTER: MARQUEE + BOTTOM BAR */}
+        <LiveMarqueeHeadline />
+        <PaperFooter />
       </section>
     </div>
   );

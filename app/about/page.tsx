@@ -2,6 +2,8 @@
 
 import React, { useEffect } from 'react';
 import PaperHeader from '@/components/PaperHeader';
+import LiveMarqueeHeadline from '@/components/LiveMarqueeHeadline';
+import PaperFooter from '@/components/PaperFooter';
 import { ABOUT_PAGE_HTML } from '@/lib/aboutPageHtml';
 
 export default function AboutPage() {
@@ -44,6 +46,17 @@ export default function AboutPage() {
             gestureDirection: 'vertical',
           });
           (window as any).locomotive = scrollInstance;
+
+          // Multi-stage update to guarantee smooth bounds with dynamic images & footer
+          setTimeout(() => {
+            if (scrollInstance && scrollInstance.update) scrollInstance.update();
+          }, 300);
+          setTimeout(() => {
+            if (scrollInstance && scrollInstance.update) scrollInstance.update();
+          }, 1000);
+          setTimeout(() => {
+            if (scrollInstance && scrollInstance.update) scrollInstance.update();
+          }, 2500);
         } catch (e) {
           console.warn('LocomotiveScroll init error:', e);
         }
@@ -61,7 +74,9 @@ export default function AboutPage() {
         } catch (e) {
           console.warn('ButterSlider init error:', e);
         }
-      }      // 4. Authentic Accordion Toggle Handler with Locomotive Scroll update
+      }
+
+      // 4. Authentic Accordion Toggle Handler with Locomotive Scroll update
       const accordions = document.querySelectorAll('.aw1-title');
       accordions.forEach((el) => {
         if ((el as any)._hasAccordionListener) return;
@@ -177,6 +192,12 @@ export default function AboutPage() {
           className="about-full-engine-wrapper"
           dangerouslySetInnerHTML={{ __html: ABOUT_PAGE_HTML }}
         />
+
+        {/* Section: Unified Infinite Live Marquee Running Headline */}
+        <LiveMarqueeHeadline />
+
+        {/* Section: Unified Editorial Newspaper Footer */}
+        <PaperFooter />
       </main>
     </div>
   );

@@ -2,6 +2,7 @@
 
 import React from 'react';
 import Link from 'next/link';
+import PaperFooter from '@/components/PaperFooter';
 
 interface WorkMobileViewProps {
   onOpenMenu: () => void;
@@ -412,6 +413,9 @@ export default function WorkMobileView({ onOpenMenu }: WorkMobileViewProps) {
           </a>
         </div>
       </div>
+
+      {/* Unified Newspaper Footer */}
+      <PaperFooter />
     </div>
   );
 }

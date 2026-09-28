@@ -4,7 +4,7 @@ import React from 'react';
 
 export default function PaperFooter() {
   return (
-    <footer className="w-full bg-paper select-none px-3 sm:px-[2vw] py-4 sm:py-[2.5vw] flex flex-row items-center justify-between gap-2 border-t border-[#1d1d1b]/35">
+    <footer className="w-full bg-[#cdc6be] select-none px-4 sm:px-[2vw] py-4 sm:py-[2.5vw] flex flex-row items-center justify-between gap-2 border-t border-[#1d1d1b]/35">
       {/* Left: Brand, Mini Stamp, and Legal */}
       <div className="flex items-center">
         {/* TAYYAB© in Canopee (desktop/tablet) */}
@@ -24,7 +24,7 @@ export default function PaperFooter() {
         {/* Legal Link */}
         <a
           href="/legal"
-          className="ml-2 sm:ml-4 lg:ml-[1vw] font-editorial text-xs sm:text-base lg:text-[1.35vw] text-[#1d1d1b] font-light hover:underline underline-offset-[0.2vw]"
+          className="sm:ml-4 lg:ml-[1vw] font-editorial text-sm sm:text-base lg:text-[1.35vw] text-[#1d1d1b] font-light hover:underline underline-offset-[0.2vw]"
         >
           Legal
         </a>

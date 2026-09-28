@@ -3,6 +3,7 @@
 import React from 'react';
 import PaperHeader from '@/components/PaperHeader';
 import PaperFooter from '@/components/PaperFooter';
+import LiveMarqueeHeadline from '@/components/LiveMarqueeHeadline';
 
 export default function LegalPage() {
   return (
@@ -27,7 +28,10 @@ export default function LegalPage() {
         </div>
       </div>
 
-      <PaperFooter />
+      <div className="w-full mt-auto">
+        <LiveMarqueeHeadline />
+        <PaperFooter />
+      </div>
     </main>
   );
 }
