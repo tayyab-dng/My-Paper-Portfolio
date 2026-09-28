@@ -61,11 +61,12 @@ export default function AboutPage() {
         } catch (e) {
           console.warn('ButterSlider init error:', e);
         }
-      }
-
-      // 4. Authentic Accordion Toggle Handler with Locomotive Scroll update
+      }      // 4. Authentic Accordion Toggle Handler with Locomotive Scroll update
       const accordions = document.querySelectorAll('.aw1-title');
       accordions.forEach((el) => {
+        if ((el as any)._hasAccordionListener) return;
+        (el as any)._hasAccordionListener = true;
+
         el.addEventListener('click', (e) => {
           e.preventDefault();
           const item = el.closest('.aw1-item') as HTMLElement;
@@ -75,21 +76,23 @@ export default function AboutPage() {
           const explore = item.querySelector('.aw-explore') as HTMLElement;
           if (!outer) return;
 
-          const isCurrentlyOpen = outer.style.display === 'block' && outer.style.height !== '0px';
+          const isCurrentlyOpen = item.classList.contains('is-open');
 
           if (isCurrentlyOpen) {
+            item.classList.remove('is-open');
             outer.style.transition = 'height 0.4s cubic-bezier(0.25, 1, 0.5, 1)';
             outer.style.height = '0px';
             if (waypoint) waypoint.style.transform = 'translate3d(0, -100%, 0)';
             if (explore) {
               explore.style.transition = 'transform 0.4s ease';
-              explore.style.transform = 'rotate(0deg)';
+              explore.style.transform = 'translate3d(0px, 0px, 0px) rotateZ(0deg)';
             }
             setTimeout(() => {
               outer.style.display = 'none';
               if ((window as any).locomotive) (window as any).locomotive.update();
             }, 400);
           } else {
+            item.classList.add('is-open');
             outer.style.display = 'block';
             outer.style.height = '0px';
             outer.style.overflow = 'hidden';
@@ -107,7 +110,7 @@ export default function AboutPage() {
               outer.style.height = `${targetHeight}px`;
               if (explore) {
                 explore.style.transition = 'transform 0.4s ease';
-                explore.style.transform = 'rotate(150deg)';
+                explore.style.transform = 'translate3d(0px, 0px, 0px) rotateZ(150deg)';
               }
             });
 
@@ -121,6 +124,9 @@ export default function AboutPage() {
       // 5. Authentic Publications Hover Interactions
       const pubLinks = document.querySelectorAll('.pub-link');
       pubLinks.forEach((link) => {
+        if ((link as any)._hasHoverListener) return;
+        (link as any)._hasHoverListener = true;
+
         const numbWrap = link.querySelector('.pub-numb__wrap') as HTMLElement;
         const trigger = link.querySelector('.pub-trigger') as HTMLElement;
 
@@ -129,10 +135,10 @@ export default function AboutPage() {
 
         link.addEventListener('mouseenter', () => {
           if (numbWrap) numbWrap.style.transform = 'translate3d(0, -100%, 0)';
-          if (trigger) trigger.style.transform = 'translate3d(0, 0%, 0)';
+          if (trigger) trigger.style.transform = 'translate3d(0, 0, 0)';
         });
         link.addEventListener('mouseleave', () => {
-          if (numbWrap) numbWrap.style.transform = 'translate3d(0, 0%, 0)';
+          if (numbWrap) numbWrap.style.transform = 'translate3d(0, 0, 0)';
           if (trigger) trigger.style.transform = 'translate3d(0, 100%, 0)';
         });
       });
