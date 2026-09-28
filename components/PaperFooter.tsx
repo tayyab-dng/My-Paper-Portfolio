@@ -4,7 +4,7 @@ import React from 'react';
 
 export default function PaperFooter() {
   return (
-    <footer className="w-full bg-[#cdc6be] select-none px-4 sm:px-[2vw] py-4 sm:py-[2.5vw] flex flex-row items-center justify-between gap-2 border-t border-[#1d1d1b]/35">
+    <footer className="w-full bg-[#cdc6be] select-none px-4 sm:px-[2vw] pt-4 sm:pt-[2.5vw] pb-7 sm:pb-[2.5vw] flex flex-row items-center justify-between gap-2 border-t border-[#1d1d1b]/35">
       {/* Left: Brand, Mini Stamp, and Legal */}
       <div className="flex items-center">
         {/* TAYYAB© in Canopee (desktop/tablet) */}

@@ -10,6 +10,18 @@ export default function AboutPage() {
   useEffect(() => {
     document.title = 'Miranda — About';
 
+    // Helper to dynamically load stylesheets without SSR hydration mismatches
+    const loadCss = (href: string) => {
+      if (!document.querySelector(`link[href="${href}"]`)) {
+        const link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.href = href;
+        document.head.appendChild(link);
+      }
+    };
+    loadCss('/css/locomotive-scroll.min.css');
+    loadCss('/css/webflow-about.css');
+
     // Helper to load external scripts dynamically
     const loadScript = (src: string): Promise<void> => {
       return new Promise((resolve) => {
@@ -46,6 +58,20 @@ export default function AboutPage() {
             gestureDirection: 'vertical',
           });
           (window as any).locomotive = scrollInstance;
+
+          // Re-calculate bounds whenever any image loads
+          const imgs = scrollContainer.querySelectorAll('img');
+          imgs.forEach((img) => {
+            if (!img.complete) {
+              img.addEventListener(
+                'load',
+                () => {
+                  if (scrollInstance && scrollInstance.update) scrollInstance.update();
+                },
+                { once: true }
+              );
+            }
+          });
 
           // Multi-stage update to guarantee smooth bounds with dynamic images & footer
           setTimeout(() => {
@@ -169,11 +195,10 @@ export default function AboutPage() {
   }, []);
 
   return (
-    <div className="w-full min-h-screen bg-[#cdc6be] text-[#1d1d1b] relative selection:bg-[#1d1d1b] selection:text-[#cdc6be]">
-      {/* External CSS for Locomotive Scroll and Compiled Webflow Layout */}
-      <link rel="stylesheet" href="/css/locomotive-scroll.min.css" />
-      <link rel="stylesheet" href="/css/webflow-about.css" />
-
+    <div
+      suppressHydrationWarning
+      className="w-full min-h-screen bg-[#cdc6be] text-[#1d1d1b] relative selection:bg-[#1d1d1b] selection:text-[#cdc6be]"
+    >
       {/* Fixed Paper Header with Amsterdam, NL */}
       <PaperHeader activeItem="ABOUT" isFixed={true} leftTitle="Amsterdam, NL" />
 
@@ -181,6 +206,7 @@ export default function AboutPage() {
       <main
         id="app"
         data-scroll-container
+        suppressHydrationWarning
         className="app awards appear w-full"
         style={{
           backgroundColor: '#cdc6be',
@@ -190,14 +216,19 @@ export default function AboutPage() {
       >
         <div
           className="about-full-engine-wrapper"
+          suppressHydrationWarning
           dangerouslySetInnerHTML={{ __html: ABOUT_PAGE_HTML }}
         />
 
         {/* Section: Unified Infinite Live Marquee Running Headline */}
-        <LiveMarqueeHeadline />
+        <div className="w-full relative z-10">
+          <LiveMarqueeHeadline />
+        </div>
 
         {/* Section: Unified Editorial Newspaper Footer */}
-        <PaperFooter />
+        <div className="w-full relative z-10">
+          <PaperFooter />
+        </div>
       </main>
     </div>
   );
