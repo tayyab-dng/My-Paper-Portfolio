@@ -9,7 +9,7 @@ export default function UpcomingArtisanSection() {
         {/* ============================================================ */}
         <div className="w-full lg:w-[65%] border-b-0 lg:border-r border-[#1d1d1b]/35 flex flex-col justify-between">
           {/* Top Row (.h-info-w): Split into Left Info & Right Artwork Card on desktop; stacked on mobile */}
-          <div className="w-full flex flex-col sm:flex-row items-stretch justify-between gap-6 sm:gap-0 pb-6 lg:pb-[3vw] pr-0 lg:pr-[3vw]">
+          <div className="w-full flex flex-col sm:flex-row items-stretch justify-between gap-3 sm:gap-0 pb-6 lg:pb-[3vw] pr-0 lg:pr-[3vw]">
             {/* Sub-Column 1: UPCOMING NEXT Headlines & Tip */}
             <div className="w-full sm:w-[48%] pr-0 sm:pr-[2.5vw] flex flex-col justify-start">
               <div>
@@ -21,20 +21,20 @@ export default function UpcomingArtisanSection() {
                 </p>
               </div>
 
-              <div className="font-editorial text-[3.8vw] sm:text-[1.2vw] text-[#1d1d1b] tracking-[-0.01em] mt-4 sm:mt-5 mb-5 sm:mb-0">
+              <div className="font-editorial text-[3.8vw] sm:text-[1.2vw] text-[#1d1d1b] tracking-[-0.01em] mt-3 sm:mt-5 mb-2 sm:mb-0">
                 <span className="font-condensed font-normal text-[4.2vw] sm:text-[1.35vw] mr-1.5 uppercase">TIP!</span>
                 <span className="font-light">Click on the image to explore</span>
               </div>
             </div>
 
             {/* Sub-Column 2: UNEXPECTED TIME Widescreen Card */}
-            <div className="w-full sm:w-[52%] border-t-0 sm:border-l border-[#1d1d1b]/35 pt-0 sm:pt-0 sm:pl-[2.5vw] flex flex-col justify-start mt-4 sm:mt-0">
-              {/* Authentic Widescreen 28vw : 11vw Landscape Artwork */}
-              <div className="w-full aspect-[28/11] overflow-hidden border border-[#1d1d1b] bg-[#16273b]">
+            <div className="w-full sm:w-[52%] border-t-0 sm:border-l border-[#1d1d1b]/35 pt-0 sm:pt-0 sm:pl-[2.5vw] flex flex-col justify-start mt-2 sm:mt-0">
+              {/* Authentic Landscape Artwork - taller on mobile to eliminate empty space */}
+              <div className="w-full aspect-[16/10] sm:aspect-[28/11] overflow-hidden border border-[#1d1d1b] bg-[#16273b]">
                 <img
                   src="/assets/unexpected-time.webp"
                   alt="Unexpected Time"
-                  className="w-full h-full object-cover object-[center_25%] select-none"
+                  className="w-full h-full object-cover object-[center_20%] select-none"
                 />
               </div>
 
