@@ -46,12 +46,11 @@ export default function AllWorkShowcase() {
 
         {/* ============================================================ */}
         {/* CENTER COLUMN: ALL WORK! HERO EMBED                          */}
-        {/* On mobile: displayed at the top with colossal 2-line layout  */}
         {/* ============================================================ */}
         <div className="w-full lg:w-[36%] lg:border-r border-[#1d1d1b]/35 lg:px-[2.5vw] flex flex-col items-start lg:items-center justify-start lg:justify-center text-left lg:text-center my-0 lg:my-0">
           <Link
             href="/work"
-            className="group relative inline-flex items-center justify-start lg:justify-center p-0 lg:px-[3vw] lg:py-[1.2vw] cursor-pointer"
+            className="self-center group relative inline-flex items-center justify-center p-0 lg:px-[3vw] lg:py-[1.2vw] cursor-pointer"
           >
             {/* Hand-drawn Oval Ellipse SVG (desktop only) */}
             <svg
@@ -71,23 +70,23 @@ export default function AllWorkShowcase() {
               />
             </svg>
 
-            {/* Headline Title: Stacked on mobile "ALL WO" line 1, "RK!" line 2 */}
-            <h2 className="font-condensed text-[29vw] sm:text-[25vw] lg:text-[4.5vw] leading-[0.76] lg:leading-none text-[#1d1d1b] uppercase tracking-[-0.05em] font-normal relative z-10 m-0 p-0 text-left lg:text-center">
-              All W<span className="font-display">o</span><br className="block lg:hidden" />rk!
+            {/* Headline Title: 1 line and centered on mobile */}
+            <h2 className="font-condensed text-[20vw] sm:text-[16vw] lg:text-[4.5vw] leading-[0.88] lg:leading-none text-[#1d1d1b] uppercase tracking-[-0.04em] font-normal relative z-10 m-0 p-0 text-center whitespace-nowrap">
+              All W<span className="font-display">o</span>rk!
             </h2>
           </Link>
 
-          {/* Subtitle */}
-          <p className="font-editorial text-[6.5vw] sm:text-xl lg:text-[2.2vw] leading-[1.15] lg:leading-[2.8vw] text-[#1d1d1b] font-light tracking-[-0.03em] mt-3 lg:mt-[1.2vw] max-w-[90%] text-left lg:text-center">
+          {/* Subtitle - left aligned on mobile, centered on desktop */}
+          <p className="font-editorial text-[5.2vw] sm:text-xl lg:text-[2.2vw] leading-[1.2] lg:leading-[2.8vw] text-[#1d1d1b] font-light tracking-[-0.03em] mt-3 lg:mt-[1.2vw] max-w-[95%] lg:max-w-[90%] text-left lg:text-center">
             Handpicked highlights —<br className="block sm:hidden" /> spanning the last few years.
           </p>
 
-          {/* Caption */}
-          <div className="flex items-center gap-1.5 lg:gap-[0.3vw] mt-3 lg:mt-[1.8vw]">
-            <span className="font-condensed text-[4vw] sm:text-sm lg:text-[1.3vw] text-[#1d1d1b] uppercase font-normal tracking-[-0.02em]">
+          {/* Caption - left aligned on mobile, centered on desktop */}
+          <div className="flex items-center justify-start lg:justify-center gap-1.5 lg:gap-[0.3vw] mt-2.5 lg:mt-[1.8vw]">
+            <span className="font-condensed text-[3.8vw] sm:text-sm lg:text-[1.3vw] text-[#1d1d1b] uppercase font-normal tracking-[-0.02em]">
               Tip!
             </span>
-            <span className="font-editorial text-[3.8vw] sm:text-sm lg:text-[1.15vw] text-[#1d1d1b] font-light tracking-[-0.01em]">
+            <span className="font-editorial text-[3.6vw] sm:text-sm lg:text-[1.15vw] text-[#1d1d1b] font-light tracking-[-0.01em]">
               Click on the sides to explore
             </span>
           </div>

@@ -13,8 +13,8 @@ export default function UpcomingArtisanSection() {
             {/* Sub-Column 1: UPCOMING NEXT Headlines & Tip */}
             <div className="w-full sm:w-[48%] pr-0 sm:pr-[2.5vw] flex flex-col justify-start">
               <div>
-                <h3 className="font-condensed text-[29vw] sm:text-[4.5vw] text-[#1d1d1b] uppercase tracking-[-0.05em] leading-[0.78] sm:leading-[0.88] font-normal break-words m-0">
-                  Up<span className="font-display font-medium text-[27vw] sm:text-[4vw] inline-block">co</span>min<br className="block sm:hidden" /><span className="font-display font-medium text-[27vw] sm:text-[4vw] inline-block">g</span> Next
+                <h3 className="font-condensed text-[24vw] sm:text-[4.5vw] text-[#1d1d1b] uppercase tracking-[-0.05em] leading-[0.82] sm:leading-[0.88] font-normal m-0 text-left">
+                  Up<span className="font-display font-medium text-[22vw] sm:text-[4vw] inline-block">co</span>min<span className="font-display font-medium text-[22vw] sm:text-[4vw] inline-block">g</span><br className="block sm:hidden" /> Next
                 </h3>
                 <p className="font-editorial text-[6.8vw] sm:text-[2.2vw] text-[#1d1d1b] font-light leading-[1.12] sm:leading-[1.22] tracking-[-0.03em] mt-3">
                   Fresh entry — A selected<br /> work from the latest <br />digital releases.
