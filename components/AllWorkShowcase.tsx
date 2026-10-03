@@ -50,7 +50,7 @@ export default function AllWorkShowcase() {
         <div className="w-full lg:w-[36%] lg:border-r border-[#1d1d1b]/35 lg:px-[2.5vw] flex flex-col items-start lg:items-center justify-start lg:justify-center text-left lg:text-center my-0 lg:my-0">
           <Link
             href="/work"
-            className="self-center group relative inline-flex items-center justify-center p-0 lg:px-[3vw] lg:py-[1.2vw] cursor-pointer"
+            className="self-start lg:self-center group relative inline-flex items-center justify-start lg:justify-center p-0 lg:px-[3vw] lg:py-[1.2vw] cursor-pointer"
           >
             {/* Hand-drawn Oval Ellipse SVG (desktop only) */}
             <svg
@@ -70,8 +70,8 @@ export default function AllWorkShowcase() {
               />
             </svg>
 
-            {/* Headline Title: 1 line and centered on mobile */}
-            <h2 className="font-condensed text-[20vw] sm:text-[16vw] lg:text-[4.5vw] leading-[0.88] lg:leading-none text-[#1d1d1b] uppercase tracking-[-0.04em] font-normal relative z-10 m-0 p-0 text-center whitespace-nowrap">
+            {/* Headline Title: 1 line and left-aligned on mobile, centered on desktop */}
+            <h2 className="font-condensed text-[20vw] sm:text-[16vw] lg:text-[4.5vw] leading-[0.88] lg:leading-none text-[#1d1d1b] uppercase tracking-[-0.04em] font-normal relative z-10 m-0 p-0 text-left lg:text-center whitespace-nowrap">
               All W<span className="font-display">o</span>rk!
             </h2>
           </Link>
