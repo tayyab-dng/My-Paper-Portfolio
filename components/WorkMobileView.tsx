@@ -186,7 +186,7 @@ export default function WorkMobileView({ onOpenMenu }: WorkMobileViewProps) {
         <a href="/" className="cursor-pointer hover:opacity-75 transition-opacity inline-flex items-center justify-center">
           <img
             src="/assets/header.svg"
-            alt="The Paper Portfolio"
+            alt="Tayyab Portfolio"
             className="h-[20px] w-auto object-contain select-none pointer-events-none"
           />
         </a>

@@ -37,7 +37,7 @@ export default function WorkSidebarNav({ onOpenMenu }: WorkSidebarNavProps) {
         >
           <img
             src="/assets/header.svg"
-            alt="Tayyab Safdar Portfolio"
+            alt="Tayyab Portfolio"
             className="w-[18vh] h-auto object-contain select-none pointer-events-none"
           />
         </a>

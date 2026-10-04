@@ -25,7 +25,7 @@ export default function AboutHeaderNav({ onOpenMenu }: AboutHeaderNavProps) {
         >
           <img
             src="/assets/header.svg"
-            alt="Tayyab Safdar Portfolio"
+            alt="Tayyab Portfolio"
             draggable={false}
             className="w-full h-auto block select-none pointer-events-none"
           />

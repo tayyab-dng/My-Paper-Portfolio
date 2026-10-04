@@ -30,7 +30,7 @@ export default function PaperHeader({ activeItem = 'INDEX', isFixed = false, lef
           <a href="/" className="cursor-pointer inline-flex items-center justify-center">
             <img
               src="/assets/header.svg"
-              alt="The Paper Portfolio"
+              alt="Tayyab Portfolio"
               className="h-[23px] sm:h-[26px] md:h-9 md:max-h-[3.6vh] w-auto max-w-[70vw] object-contain select-none pointer-events-none"
             />
           </a>
