@@ -29,7 +29,7 @@ export default function Home() {
         {/* Section 3: Interactive Artist 2-Column Split (Star Avatar & Eye Portrait) */}
         <InteractiveArtistSection />
 
-        {/* Section 4: Massive Framed "WEBSITE" Block + Vintage Perforated Stamp */}
+        {/* Section 4: Massive Framed "PORTFOLIO" Block + Vintage Perforated Stamp */}
         <WebsiteStampBanner />
 
         {/* Section 5: Upcoming Next + Unexpected Time + Artisan Philosophy */}
