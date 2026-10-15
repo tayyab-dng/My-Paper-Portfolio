@@ -310,7 +310,7 @@ export function PostageStamp() {
         {/* Typewriter Metatags */}
         <div className="w-full border-t border-ink/20 pt-2 text-center font-mono text-[9px] sm:text-[10px] tracking-wider text-ink/80 uppercase space-y-0.5">
           <p>NAME: Tayyab Safdar</p>
-          <p>DATE: 12/10/1993</p>
+          <p>DATE: 21/10/2004</p>
         </div>
       </div>
     </div>
