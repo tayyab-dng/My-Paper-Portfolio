@@ -33,7 +33,7 @@ export default function InteractiveArtistSection() {
             <div className="w-full h-[60vw] sm:h-[45vw] lg:h-[35vw] border border-[#1d1d1b] mt-[5vw] lg:mt-[2vw] mb-[8vw] lg:mb-6 overflow-hidden flex items-center justify-center bg-[#8e7667]">
               <img
                 src="/assets/avatar-star.jpeg"
-                alt="Niccolò Miranda"
+                alt="Tayyab Safdar"
                 className="w-full h-full object-cover select-none pointer-events-none"
               />
             </div>
@@ -87,7 +87,7 @@ export default function InteractiveArtistSection() {
             {/* Line 4 */}
             <div className="relative w-full border-b border-[#1d1d1b]/30 pb-0.5 pt-0.5 mt-0 lg:mt-[0.5vw]">
               <h2 className="font-condensed text-[12vw] sm:text-[12vw] lg:text-[8.5vw] leading-[9.8vw] sm:leading-[10vw] lg:leading-[6.6vw] text-[#1d1d1b] uppercase tracking-[-0.04em] font-normal whitespace-nowrap m-0">
-                based in <span className="underline underline-offset-[0.3vw] decoration-[1.5px] decoration-[#1d1d1b]">Amsterdam, NL</span>.
+                based in <span className="underline underline-offset-[0.3vw] decoration-[1.5px] decoration-[#1d1d1b]">Pakistan</span>.
               </h2>
             </div>
           </div>

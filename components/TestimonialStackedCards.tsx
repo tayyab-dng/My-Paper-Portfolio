@@ -15,7 +15,7 @@ interface Testimonial {
 const testimonials: Testimonial[] = [
   {
     id: 's-1',
-    quote: '“Blurring the line between design & dev, Niccolo has an umatched eye for detail and precise execution in his work which pushes the whole industry forward”',
+    quote: '“Blurring the line between design & dev, Tayyab has an umatched eye for detail and precise execution in his work which pushes the whole industry forward”',
     avatar: '/assets/sam-day.jpg',
     name: 'SAM DAY',
     role: 'Creative Director & Designer',
@@ -24,7 +24,7 @@ const testimonials: Testimonial[] = [
   },
   {
     id: 's-2',
-    quote: '"Niccolò‘s eye for detail & design as well as his impeccable aesthetics, make him one of the leaders in today’s digital design scene"',
+    quote: '"Tayyab‘s eye for detail & design as well as his impeccable aesthetics, make him one of the leaders in today’s digital design scene"',
     avatar: '/assets/sofia-papadopoulou.jpg',
     name: (
       <>

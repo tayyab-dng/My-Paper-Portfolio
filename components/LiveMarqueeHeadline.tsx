@@ -44,7 +44,7 @@ export default function LiveMarqueeHeadline() {
 
             {/* Email Me Solid Black Box */}
             <a
-              href="mailto:info@niccolomiranda.com?subject=Project%20Request"
+              href="mailto:tayyabsafdar560@gmail.com?subject=Project%20Request"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-[#1d1d1b] ml-[1.5vw] px-[0.8vw] pt-[0.5vw] pb-[0.8vw] relative bottom-[0.4vw] inline-flex items-center justify-center shrink-0 hover:opacity-80 transition-opacity"

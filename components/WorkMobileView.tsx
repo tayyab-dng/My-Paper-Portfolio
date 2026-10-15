@@ -278,7 +278,7 @@ export default function WorkMobileView({ onOpenMenu }: WorkMobileViewProps) {
         >
           <img
             src="/assets/stamp.png"
-            alt="Miranda Stamp"
+            alt="Tayyab Postal Stamp"
             draggable={false}
             className="w-full h-full object-contain select-none pointer-events-none"
           />
@@ -404,7 +404,7 @@ export default function WorkMobileView({ onOpenMenu }: WorkMobileViewProps) {
         </div>
         <div className="w-full mt-8">
           <a
-            href="mailto:info@niccolomiranda.com"
+            href="mailto:tayyabsafdar560@gmail.com"
             className="w-full h-[18vw] min-h-[64px] max-h-[90px] flex items-center justify-center border border-[#1d1d1b]/40 rounded-[50%] bg-transparent hover:bg-[#1d1d1b] hover:text-[#cdc6be] text-[#1d1d1b] transition-all cursor-pointer"
           >
             <span className="font-condensed text-[7vw] leading-none uppercase tracking-[-0.03em] font-normal">

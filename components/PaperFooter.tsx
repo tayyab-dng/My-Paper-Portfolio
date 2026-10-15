@@ -33,7 +33,7 @@ export default function PaperFooter() {
       {/* Right: Social Platform Links in Canopee */}
       <div className="flex items-center font-condensed text-[3.2vw] sm:text-xl lg:text-[1.6vw] text-[#1d1d1b] uppercase tracking-[-0.02em] font-normal whitespace-nowrap">
         <a
-          href="https://twitter.com/niccolomiranda"
+          href="https://twitter.com/tayyabsafdar"
           target="_blank"
           rel="noopener noreferrer"
           className="hover:opacity-65 transition-opacity"
@@ -44,7 +44,7 @@ export default function PaperFooter() {
           •
         </span>
         <a
-          href="https://instagram.com/niccolomiranda"
+          href="https://instagram.com/tayyabsafdar"
           target="_blank"
           rel="noopener noreferrer"
           className="hover:opacity-65 transition-opacity"
@@ -55,7 +55,7 @@ export default function PaperFooter() {
           •
         </span>
         <a
-          href="https://dribbble.com/niccolomiranda"
+          href="https://dribbble.com/tayyabsafdar"
           target="_blank"
           rel="noopener noreferrer"
           className="hover:opacity-65 transition-opacity"
@@ -66,7 +66,7 @@ export default function PaperFooter() {
           •
         </span>
         <a
-          href="https://www.behance.net/niccolomiranda"
+          href="https://www.behance.net/tayyabsafdar"
           target="_blank"
           rel="noopener noreferrer"
           className="hover:opacity-65 transition-opacity"

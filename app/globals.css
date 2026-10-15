@@ -90,7 +90,7 @@ body {
   -ms-overflow-style: none;
 }
 
-/* Authentic Paper Texture Overlay matching niccolomiranda.com */
+/* Authentic Paper Texture Overlay */
 .paper-background {
   position: fixed;
   top: 0;
@@ -214,7 +214,7 @@ body {
   pointer-events: none;
 }
 
-/* Underline style matching Miranda */
+/* Editorial Underline style */
 .under {
   text-decoration: underline;
   text-underline-offset: 0.3vw;

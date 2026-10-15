@@ -22,7 +22,7 @@ export async function generateMetadata({ params }: PageProps) {
   const project = PROJECTS_MAP[slug];
   if (!project) return { title: 'Project Not Found' };
   return {
-    title: `Miranda — ${project.name}`,
+    title: `Tayyab Safdar — ${project.name}`,
     description: project.desc,
   };
 }
@@ -65,7 +65,7 @@ export default async function ProjectDetailPage({ params }: PageProps) {
   return (
     <div className="relative w-full min-h-screen bg-[#cdc6be] text-[#1d1d1b] select-none overflow-x-hidden font-editorial">
       <style>{`
-        /* Authentic Niccolò Miranda Project Hero Styles */
+        /* Authentic Project Hero Styles */
         .case-intro {
           width: 100%;
           height: 100vh;
@@ -1406,7 +1406,7 @@ export default async function ProjectDetailPage({ params }: PageProps) {
                 <h2 className="p-h2 b">The</h2>
                 <img
                   src="/assets/stamp.png"
-                  alt="Miranda Stamp"
+                  alt="Tayyab Postal Stamp"
                   draggable={false}
                   className="f-stamp p"
                 />
@@ -1500,7 +1500,7 @@ export default async function ProjectDetailPage({ params }: PageProps) {
           {/* Center Column: NEXT PROJECTS! Headline + Oval Doodle */}
           <div className="headline f">
             <a
-              href="mailto:info@niccolomiranda.com?subject=Project Inquiry"
+              href="mailto:tayyabsafdar560@gmail.com?subject=Project Inquiry"
               className="head-wrap"
             >
               <div className="head-title w">

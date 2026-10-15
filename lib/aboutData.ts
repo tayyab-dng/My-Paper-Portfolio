@@ -156,7 +156,7 @@ export const PUBLICATIONS: PublicationItem[] = [
     title: 'Awwwards Interview',
     source: 'Awwwards',
     year: '2023',
-    href: 'https://www.awwwards.com/niccolo-miranda-interview.html',
+    href: 'https://www.awwwards.com',
     ico: '/assets/article.svg'
   },
   {
@@ -188,7 +188,7 @@ export const PUBLICATIONS: PublicationItem[] = [
     title: 'Fathers of Type VOL.1',
     source: 'Medium',
     year: '2021',
-    href: 'https://medium.com/@niccolomiranda/fathers-of-type-vol-1-a9febdc7acaa',
+    href: 'https://medium.com/@tayyabsafdar/fathers-of-type-vol-1-a9febdc7acaa',
     ico: '/assets/article.svg'
   },
   {
@@ -244,7 +244,7 @@ export const PUBLICATIONS: PublicationItem[] = [
     title: 'Independent of the Year Nominee',
     source: 'Awwwards',
     year: '2021',
-    href: 'https://annual.awwwards.com/categories/independent-of-the-year/niccol-miranda',
+    href: 'https://annual.awwwards.com/categories/independent-of-the-year',
     ico: '/assets/link.svg'
   },
   {
@@ -252,7 +252,7 @@ export const PUBLICATIONS: PublicationItem[] = [
     title: 'Lovers Magazine Interview',
     source: 'Lovers Magazine',
     year: '2021',
-    href: 'https://www.loversmagazine.com/interviews/niccolo-miranda',
+    href: 'https://www.loversmagazine.com',
     ico: '/assets/article.svg'
   }
 ];

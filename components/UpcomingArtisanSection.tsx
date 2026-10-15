@@ -60,7 +60,7 @@ export default function UpcomingArtisanSection() {
           <div className="hidden lg:block w-full overflow-hidden border-t border-b lg:border-t lg:border-b-0 border-[#1d1d1b] bg-[#786154] mt-2 mr-0">
             <img
               src="/assets/avatar-3.jpeg"
-              alt="Niccolò Miranda Artisan Concept"
+              alt="Tayyab Safdar Artisan Concept"
               className="w-full h-auto object-cover select-none block"
             />
           </div>

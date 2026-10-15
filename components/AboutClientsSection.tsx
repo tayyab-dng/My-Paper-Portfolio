@@ -68,7 +68,7 @@ export default function AboutClientsSection() {
         <div className="aw-column le w-full border border-[#1d1d1b] overflow-hidden bg-[#e2dedb] h-[45vw] md:h-[45vw]">
           <img
             src="/assets/avatar-2.jpeg"
-            alt="Niccolò Miranda Portrait"
+            alt="Tayyab Safdar Portrait"
             draggable={false}
             className="w-full h-full object-cover select-none hover:scale-105 transition-transform duration-700"
           />

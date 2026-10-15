@@ -4,7 +4,7 @@ export default function PixelPerfectArtisanSection() {
   return (
     <section className="w-full bg-paper select-none px-4 sm:px-[2vw] pt-4 sm:pt-[4vw] pb-8 sm:pb-[5vw] overflow-hidden">
       {/* ============================================================ */}
-      {/* MOBILE LAYOUT (lg:hidden): Matches niccolomiranda.com mobile */}
+      {/* MOBILE LAYOUT (lg:hidden) */}
       {/* 1. Star Avatar -> 2. THE PIXEL -> 3. PERFECT -> 4. Text -> 5. ARTISAN */}
       {/* ============================================================ */}
       <div className="flex flex-col lg:hidden w-full">
@@ -129,7 +129,7 @@ export default function PixelPerfectArtisanSection() {
 
             <div className="my-[0.6vw]">
               <a
-                href="https://www.awwwards.com/niccolo.miranda"
+                href="https://www.awwwards.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block hover:opacity-75 transition-opacity cursor-pointer"

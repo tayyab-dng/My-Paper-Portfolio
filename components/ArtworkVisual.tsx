@@ -118,9 +118,9 @@ export function UnexpectedTimeArtwork() {
 }
 
 /**
- * Niccolo with Star Earring Avatar (Left Column Illustration)
+ * Tayyab with Star Earring Avatar (Left Column Illustration)
  */
-export function NiccoloStarAvatar() {
+export function TayyabStarAvatar() {
   return (
     <div className="relative w-full aspect-square max-w-[340px] mx-auto overflow-hidden bg-[#8e7667] border border-ink/15 shadow-sm">
       {/* Warm illustrated skin background */}
@@ -155,9 +155,9 @@ export function NiccoloStarAvatar() {
 }
 
 /**
- * Niccolo Close-Up Eyes & Forehead Portrait (Right Column Illustration)
+ * Tayyab Close-Up Eyes & Forehead Portrait (Right Column Illustration)
  */
-export function NiccoloPortraitFace() {
+export function TayyabPortraitFace() {
   return (
     <div className="relative w-full h-[280px] sm:h-[360px] md:h-[440px] overflow-hidden bg-[#a68c7c] border border-ink/20">
       {/* Skin undertone */}
@@ -222,9 +222,9 @@ export function NiccoloPortraitFace() {
 }
 
 /**
- * Niccolo Anatomical Cutaway Head (Showing Design Toolkit Inside Brain)
+ * Tayyab Anatomical Cutaway Head (Showing Design Toolkit Inside Brain)
  */
-export function NiccoloCutawayHead() {
+export function TayyabCutawayHead() {
   return (
     <div className="relative w-full aspect-[4/5] max-w-[340px] mx-auto overflow-hidden bg-[#786154] border border-ink/20 shadow-sm">
       {/* Base skin tone */}
@@ -309,7 +309,7 @@ export function PostageStamp() {
 
         {/* Typewriter Metatags */}
         <div className="w-full border-t border-ink/20 pt-2 text-center font-mono text-[9px] sm:text-[10px] tracking-wider text-ink/80 uppercase space-y-0.5">
-          <p>NAME: Niccolo Miranda</p>
+          <p>NAME: Tayyab Safdar</p>
           <p>DATE: 12/10/1993</p>
         </div>
       </div>

@@ -21,7 +21,7 @@ export default function WorkPage() {
         <WorkHorizontalTrack />
       </div>
 
-      {/* Mobile View: Vertical Editorial Work Page matching reference niccolomiranda.com/work */}
+      {/* Mobile View: Vertical Editorial Work Page */}
       <div className="block md:hidden w-full min-h-screen">
         <WorkMobileView onOpenMenu={() => setIsMenuOpen(true)} />
       </div>

@@ -26,7 +26,7 @@ export default function WebsiteStampBanner() {
         <div className="w-full lg:w-[20vw] flex justify-center lg:justify-end items-center shrink-0">
           <img
             src="/assets/stamp.png"
-            alt="Niccolò Miranda Stamp"
+            alt="Tayyab Postal Stamp"
             className="w-[50vw] sm:w-[32vw] lg:w-[20vw] max-w-none h-auto object-contain select-none pointer-events-none mix-blend-multiply"
           />
         </div>

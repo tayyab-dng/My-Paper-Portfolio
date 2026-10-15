@@ -1,6 +1,6 @@
-# Niccolò Miranda — The Paper Portfolio Clone
+# Tayyab Safdar — The Paper Portfolio
 
-A 100% pixel-perfect editorial replica of Niccolò Miranda's award-winning paper portfolio website, crafted with Next.js, React, Tailwind CSS, and custom typography.
+An authentic editorial paper portfolio website for Tayyab Safdar, crafted with Next.js, React, Tailwind CSS, and custom typography.
 
 ## Features
 
@@ -12,7 +12,7 @@ A 100% pixel-perfect editorial replica of Niccolò Miranda's award-winning paper
   - Interactive book accordion panels (`.book-wrap`) revealing case studies, tags, and high-resolution artwork.
 - **About Page Hero (`/about`)**:
   - Giant solid black `ABOUT ME` masthead with custom font ligatures.
-  - Amsterdam triple crosses (`ams-logo.svg`) and typography statement.
+  - Pakistan emblem and typography statement.
 - **Fullscreen Navigation Modal**: Seamless navigation across `/` (Index), `/work` (Work), and `/about` (About) with dynamic active marker lines.
 - **Micro-interactions & Animations**: Continuous newspaper marquees, interactive cursor-reactive artisan stamps, stacked testimonial cards, and custom minimal locomotive scrollbar.
 

@@ -8,7 +8,7 @@ import { ABOUT_PAGE_HTML } from '@/lib/aboutPageHtml';
 
 export default function AboutPage() {
   useEffect(() => {
-    document.title = 'Miranda — About';
+    document.title = 'Tayyab Safdar — About';
 
     // Helper to dynamically load stylesheets without SSR hydration mismatches
     const loadCss = (href: string) => {
@@ -199,8 +199,8 @@ export default function AboutPage() {
       suppressHydrationWarning
       className="w-full min-h-screen bg-[#cdc6be] text-[#1d1d1b] relative selection:bg-[#1d1d1b] selection:text-[#cdc6be]"
     >
-      {/* Fixed Paper Header with Amsterdam, NL */}
-      <PaperHeader activeItem="ABOUT" isFixed={true} leftTitle="Amsterdam, NL" />
+      {/* Fixed Paper Header with Pakistan */}
+      <PaperHeader activeItem="ABOUT" isFixed={true} leftTitle="Pakistan" />
 
       {/* Main App Container for Virtual Smooth Scroll */}
       <main

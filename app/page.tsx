@@ -23,7 +23,7 @@ export default function Home() {
         {/* Section 1: Top Project Gallery Strip (AvroKO, All Work!, WOW Concept) */}
         <ProjectGalleryTrack />
 
-        {/* Section 2: Colossal "MIRANDA" Newspaper Banner */}
+        {/* Section 2: Colossal Newspaper Banner */}
         <HeroNewspaper />
 
         {/* Section 3: Interactive Artist 2-Column Split (Star Avatar & Eye Portrait) */}

@@ -168,10 +168,10 @@ export default function FullscreenMenuModal({
         </div>
       </nav>
 
-      {/* Bottom Footer Social Links matching Niccolò Miranda Webflow spec */}
+      {/* Bottom Footer Social Links */}
       <footer className="relative z-10 w-full pb-[3.5vh] pt-4 flex items-center justify-center gap-2 sm:gap-3 text-[#cdc6be] font-condensed uppercase text-[15px] md:text-[1.3vw] leading-[1.5vw] tracking-[-0.01em]">
         <a
-          href="https://twitter.com/niccolomiranda"
+          href="https://twitter.com/tayyabsafdar"
           target="_blank"
           rel="noopener noreferrer"
           className="hover:opacity-75 transition-opacity"
@@ -180,7 +180,7 @@ export default function FullscreenMenuModal({
         </a>
         <span className="text-[#cdc6be] px-0.5">·</span>
         <a
-          href="https://instagram.com/niccolomiranda"
+          href="https://instagram.com/tayyabsafdar"
           target="_blank"
           rel="noopener noreferrer"
           className="hover:opacity-75 transition-opacity"
@@ -189,7 +189,7 @@ export default function FullscreenMenuModal({
         </a>
         <span className="text-[#cdc6be] px-0.5">·</span>
         <a
-          href="https://dribbble.com/niccolomiranda"
+          href="https://dribbble.com/tayyabsafdar"
           target="_blank"
           rel="noopener noreferrer"
           className="hover:opacity-75 transition-opacity"
@@ -198,7 +198,7 @@ export default function FullscreenMenuModal({
         </a>
         <span className="text-[#cdc6be] px-0.5">·</span>
         <a
-          href="https://www.behance.net/niccolomiranda"
+          href="https://www.behance.net/tayyabsafdar"
           target="_blank"
           rel="noopener noreferrer"
           className="hover:opacity-75 transition-opacity"

@@ -76,7 +76,7 @@ export default function AboutExperienceSection() {
             <div className="aw-slider__desc font-editorial text-[4.2vw] md:text-[1.3vw] leading-[1.35] text-[#1d1d1b]/85 mt-[6vw] md:mt-0">
               Whether you&apos;re looking for an expert for a cool digital project — or have a full-time job opportunity, you can easily reach me by clicking{' '}
               <a
-                href="mailto:info@niccolomiranda.com?subject=Project%20Inquiry"
+                href="mailto:tayyabsafdar560@gmail.com?subject=Project%20Inquiry"
                 className="underline decoration-[#1d1d1b]/40 hover:decoration-[#1d1d1b] font-medium text-[#1d1d1b]"
               >
                 here

@@ -23,13 +23,12 @@ export default function AboutHeroSection() {
           </h1>
         </div>
 
-        {/* Amsterdam Statement with Triple Crosses Logo */}
+        {/* Pakistan Statement */}
         <div className="aw1-desc relative w-full mt-4 md:mt-0">
-          {/* Amsterdam 3 Crosses Logo */}
           <div className="aw1-img absolute left-0 top-[2vw] md:top-[4vw] w-[16vw] md:w-[12vw] pointer-events-none select-none">
             <img
               src="/assets/ams-logo.svg"
-              alt="Amsterdam Crosses"
+              alt="Location Emblem"
               draggable={false}
               className="aw1-image w-full h-auto block select-none"
             />
@@ -44,7 +43,7 @@ export default function AboutHeroSection() {
               letterSpacing: '-0.04em',
             }}
           >
-            Amsterdam-based independent Designer &amp; Developer with focus on Art direction, Motion and Branding.
+            Pakistan-based independent Designer &amp; Developer with focus on Art direction, Motion and Branding.
           </h2>
         </div>
       </div>

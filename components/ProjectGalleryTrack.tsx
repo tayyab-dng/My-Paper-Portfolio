@@ -54,7 +54,7 @@ export default function ProjectGalleryTrack() {
               <h2 className="font-display text-[3.6rem] sm:text-[4.4rem] lg:text-[5.2rem] text-[#1d1d1b] uppercase tracking-[-0.02em] leading-[0.88] font-normal transition-transform duration-300 group-hover:scale-[1.01]">
                 ALL WORK!
               </h2>
-              {/* Subtle hover doodle outline matching niccolomiranda.com */}
+              {/* Subtle hover doodle outline */}
               <svg
                 viewBox="0 0 500 146"
                 className="absolute -inset-x-5 -inset-y-2.5 w-[calc(100%+2.5rem)] h-[calc(100%+1.25rem)] pointer-events-none transition-all duration-700 ease-out opacity-0 group-hover:opacity-100"
