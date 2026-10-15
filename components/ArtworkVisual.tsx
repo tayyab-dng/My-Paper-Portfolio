@@ -300,10 +300,10 @@ export function PostageStamp() {
           </svg>
         </div>
 
-        {/* Hand-drawn ink signature "NM" */}
+        {/* Hand-drawn ink signature "TS" Monogram */}
         <div className="w-full my-1 flex justify-center">
-          <svg viewBox="0 0 120 40" className="w-24 h-8 stroke-ink fill-none stroke-[1.8] stroke-linecap-round">
-            <path d="M 10 32 L 20 8 L 35 32 L 48 10 L 60 30 L 72 18 L 88 28 L 105 24" />
+          <svg viewBox="0 0 120 40" className="w-24 h-8 stroke-ink fill-none stroke-[1.8] stroke-linecap-round stroke-linejoin-round">
+            <path d="M 15 16 L 36 14 M 25 8 L 22 34 L 40 15 C 48 11, 46 20, 38 23 C 33 26, 38 31, 50 30 C 58 29, 68 31, 105 30" />
           </svg>
         </div>
 
